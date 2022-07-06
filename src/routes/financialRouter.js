@@ -4,9 +4,9 @@ import { getFinancialEvents, postFinancialEvents, getFinancialEventsSum } from "
 
 const financialRouter = Router();
 
-financialRouter.post("/financial-events", getFinancialEvents);
+financialRouter.post("/financial-events", postFinancialEvents);
 
-financialRouter.get("/financial-events", postFinancialEvents);
+financialRouter.get("/financial-events", getFinancialEvents);
 
 financialRouter.get("/financial-events/sum", getFinancialEventsSum);
 

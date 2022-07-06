@@ -1,3 +1,8 @@
+import jwt from "jsonwebtoken";
+
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export function authentication(authorization){
     const token = authorization.replace("Bearer ", "");

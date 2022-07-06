@@ -1,6 +1,7 @@
 
 import jwt from "jsonwebtoken";
 import connection from "./../database.js";
+import bcrypt from "bcrypt";
 
 async function signUp(name, email, password){
 
